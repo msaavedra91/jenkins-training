@@ -1,5 +1,3 @@
 # jenkins-training
 
-Some example test
-
-More text
+This is a commit
