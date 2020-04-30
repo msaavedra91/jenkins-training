@@ -28,6 +28,13 @@ pipeline {
             steps {
                 sh 'terraform plan -out=plan'
             }
+        }
+
+        stage('Terraform Apply') {
+            steps {
+                input('Do you want to proceed?')
+                sh 'terraform apply -auto-approve'
+            }
         } 
     }
 }
