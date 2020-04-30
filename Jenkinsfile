@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('checkout') {
-            steps {
-                git url: 'git@github.com:msaavedra91/jenkins-training.git'
-            }
-        }
+        // stage('checkout') {
+        //     steps {
+        //         git url: 'git@github.com:msaavedra91/jenkins-training.git'
+        //     }
+        // }
 
         stage('Set Terraform path') {
             steps {
